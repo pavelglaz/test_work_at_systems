@@ -10,12 +10,12 @@ services:
     build: ./src
     container_name: api_backend
     environment:
-      PORT: 3001
+      PORT: 3000
       REDIS_HOST: redis
       REDIS_PORT: 6379
       TRENDING: 'https://trending.bid'
     ports:
-      - '3001:3001'
+      - '3000:3000'
     depends_on:
       - redis
     networks:
